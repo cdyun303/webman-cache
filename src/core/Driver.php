@@ -13,6 +13,7 @@ use DateInterval;
 use DateTime;
 use DateTimeInterface;
 use Exception;
+use Psr\SimpleCache\InvalidArgumentException;
 use think\Container;
 use throwable;
 
@@ -192,6 +193,7 @@ abstract class Driver implements CacheHandlerInterface
      * @access public
      * @param string $tag 标签标识
      * @return array
+     * @throws InvalidArgumentException
      * @author cdyun(121625706@qq.com)
      */
     public function getTagItems(string $tag): array

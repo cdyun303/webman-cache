@@ -86,7 +86,7 @@ abstract class Manager
      * @throws ReflectionException
      * @author cdyun(121625706@qq.com)
      */
-    protected function driver(string $name = null): mixed
+    protected function driver(?string $name = null): mixed
     {
         $name = $name ?: $this->getDefaultDriver();
 
@@ -118,7 +118,7 @@ abstract class Manager
      * @param string $name
      * @return mixed
      *
-     * @throws ReflectionException
+     * @throws ReflectionException|Throwable
      * @author cdyun(121625706@qq.com)
      */
     protected function createDriver(string $name): mixed

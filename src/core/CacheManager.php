@@ -24,7 +24,7 @@ class CacheManager extends Manager implements CacheInterface
     /**
      * @var string|null
      */
-    protected ?string $namespace = '\\Webman\\WebmanCache\\driver\\';
+    protected ?string $namespace = '\\Cdyun\\WebmanCache\\driver\\';
 
     /**
      * @return string|null
