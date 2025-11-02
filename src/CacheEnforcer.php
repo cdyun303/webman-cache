@@ -77,10 +77,6 @@ class CacheEnforcer
 
     /**
      * 获取 Redis 缓存驱动
-     * @author cdyun(121625706@qq.com)
-     */
-    /**
-     * 描述
      * @return Driver|null
      * @throws ReflectionException
      * @author cdyun(121625706@qq.com)
